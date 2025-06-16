@@ -6,7 +6,8 @@ import {
   Instagram, 
   Youtube,
   FileText,
-  ArrowRight
+  ArrowRight,
+  Github
 } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -29,9 +30,10 @@ const Footer = () => {
   }
 
   const socialLinks = [
-    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/orabluclub' },
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/orabluclub/' },
-    { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/@OraBluClub' }
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/legismaker' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/legismaker/' },
+    { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/@Legismaker' },
+    { name: 'GitHub', icon: Github, href: 'https://github.com/legismaker' }
   ]
 
   return (
@@ -61,7 +63,7 @@ const Footer = () => {
               </div>
               
               <h3 className="text-2xl font-bold text-foreground mb-4 font-heading">
-                less <em className="font-kings-caslon">dealbreakers,</em> more <em className="font-kings-caslon">compromise.</em>
+                <em>Less</em> dealbreakers, <em>More</em> compromise.
               </h3>
               <p className="text-muted-foreground mb-8 leading-relaxed max-w-md">
                 Fast, credible, non-partisan legislative analysis designed for the realities of the Hill.
