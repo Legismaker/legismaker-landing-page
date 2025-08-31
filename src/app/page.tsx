@@ -3,6 +3,7 @@
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
+import WhoWeServe from '@/components/WhoWeServe'
 import Platform from '@/components/Platform'
 import Team from '@/components/Team'
 import FAQ from '@/components/FAQ'
@@ -21,6 +22,9 @@ export default function Home() {
         
         {/* Features Section */}
         <Features />
+        
+        {/* Who We Serve Section */}
+        <WhoWeServe />
         
         {/* Platform Section */}
         <Platform />

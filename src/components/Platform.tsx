@@ -9,18 +9,18 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 const Platform = () => {
   const steps = [
     {
-      title: "1. Upload a Bill",
-      description: "Drag and drop any bill draft—our system does the heavy lifting, parsing text and preparing it for analysis.",
+      title: "1. Discovery & Requirements",
+      description: "We work closely with your team to understand your unique challenges, workflows, and objectives. Every solution starts with deep understanding.",
       icon: Upload,
     },
     {
-      title: "2. Get the Whole Picture", 
-      description: "In seconds, Legismaker returns a full analysis: summaries, vote predictions, key players, and potential friction points.",
+      title: "2. Custom Development", 
+      description: "Our experienced developers build tailored solutions using modern technologies and best practices. We prioritize security, scalability, and user experience.",
       icon: Eye,
     },
     {
-      title: "3. Build Your Strategy",
-      description: "Use the insights to focus your outreach, draft amendments, and build winning coalitions with data-driven confidence.",
+      title: "3. Deployment & Support",
+      description: "We handle implementation, training, and provide ongoing support and maintenance. Your success is our long-term commitment.",
       icon: FileText,
     },
   ]
@@ -41,11 +41,11 @@ const Platform = () => {
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6 font-heading">
             <span className="bg-gradient-to-r from-primary-dark via-primary to-accent bg-clip-text text-transparent">
-              How It Works
+              Our Process
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A simple, powerful workflow designed to deliver strategic insights in three easy steps.
+            A collaborative approach that ensures your custom software solution meets your exact needs and exceeds your expectations.
           </p>
         </motion.div>
 
@@ -94,10 +94,10 @@ const Platform = () => {
               className="mb-8"
             >
               <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-heading">
-                Built for the Hill
+                Government Technology Expertise
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Fast. Private. Nonpartisan. Designed with and for legislative staffers, Legismaker meets the real needs of modern policymaking: clarity, speed, and strategy.
+                Secure. Scalable. Purpose-built. We understand the unique requirements of government technology: compliance, reliability, and mission-critical performance.
               </p>
             </motion.div>
 
@@ -108,8 +108,8 @@ const Platform = () => {
               viewport={{ once: true }}
             >
               <Button asChild>
-                <Link href="https://app.legismaker.com/login" className="flex items-center">
-                  Get Started
+                <Link href="#team" className="flex items-center">
+                  Start Your Project
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>

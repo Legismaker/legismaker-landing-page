@@ -17,69 +17,69 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 const Features = () => {
   const features = [
     {
-      title: "Bill Summary",
-      description: "Cuts through legalese to deliver a concise, plain-language overview of the bill's purpose and key provisions. Understand what matters in seconds.",
+      title: "Policy Analysis Systems",
+      description: "We build comprehensive legislative analysis platforms that transform complex bills into actionable insights. Custom-built for your organization's specific needs and workflows.",
       icon: FileText,
       items: [
-        "Plain-language summaries",
-        "Key provision identification", 
-        "Purpose and impact analysis",
-        "Reduces reading time"
+        "Custom analysis frameworks",
+        "Real-time bill tracking", 
+        "Automated reporting systems",
+        "Integration with existing tools"
       ]
     },
     {
-      title: "Predicted Votes",
-      description: "Uses voting records, caucus dynamics, and text analysis to forecast likely support and opposition. Not just red vs. blue—shows where margins are tight.",
+      title: "Predictive Analytics Platforms",
+      description: "Advanced data science solutions that forecast legislative outcomes using historical voting patterns, stakeholder analysis, and political dynamics modeling.",
       icon: Vote,
       items: [
-        "Support & opposition forecasting",
-        "Analysis of voting records",
-        "Caucus alignment indicators",
-        "Identifies tight margins"
+        "Machine learning models",
+        "Historical data integration",
+        "Real-time prediction updates",
+        "Custom confidence scoring"
       ]
     },
     {
-      title: "Compromise Suggestions",
-      description: "Identifies potential amendments likely to unlock swing votes without gutting the bill. Backed by model confidence and legislative precedent.",
+      title: "Strategic Decision Support",
+      description: "Intelligent systems that identify compromise opportunities and strategic pathways. Built using legislative precedent analysis and stakeholder mapping algorithms.",
       icon: GitMerge,
       items: [
-        "Amendment recommendations",
-        "Swing-vote targeting",
-        "Model confidence scores",
-        "Based on legislative precedent"
+        "Amendment recommendation engines",
+        "Stakeholder influence modeling",
+        "Coalition building tools",
+        "Strategic pathway analysis"
       ]
     },
     {
-      title: "Pivotal Lawmakers",
-      description: "Flags lawmakers whose support would be decisive—based on district alignment, past votes, and coalition influence. Helps teams focus outreach.",
+      title: "Stakeholder Management Systems",
+      description: "Comprehensive platforms for tracking, analyzing, and engaging with key decision-makers. Integrated CRM functionality designed specifically for government relations.",
       icon: Users,
       items: [
-        "Key lawmaker identification",
-        "District alignment data",
-        "Coalition influence mapping",
-        "Targeted outreach suggestions"
+        "Contact management systems",
+        "Influence mapping tools",
+        "Engagement tracking",
+        "Automated outreach workflows"
       ]
     },
     {
-      title: "Narrow Margins",
-      description: "Automatically detects sections of the bill most likely to cause partisan or intra-party friction. Know where the fault lines are—before markup.",
+      title: "Risk Assessment Tools",
+      description: "Early warning systems that identify potential roadblocks and contentious issues before they become problems. Proactive risk management for legislative strategy.",
       icon: AlertTriangle,
       items: [
-        "Friction point detection",
-        "Partisan & intra-party analysis",
-        "Proactive issue flagging",
-        "Pre-markup insights"
+        "Automated risk detection",
+        "Issue escalation systems",
+        "Stakeholder sentiment analysis",
+        "Strategic contingency planning"
       ]
     },
     {
-      title: "Coalition Mapping (Coming Soon)",
-      description: "Visualizes how different policy factions might align—or fracture—on your bill. Build smarter coalitions with data, not guesswork.",
+      title: "Data Visualization & Reporting",
+      description: "Interactive dashboards and comprehensive reporting systems that make complex political data accessible and actionable for decision-makers at all levels.",
       icon: Network,
       items: [
-        "Faction alignment visualization",
-        "Coalition-building scenarios",
-        "Potential fracture points",
-        "Data-driven strategy"
+        "Custom dashboard development",
+        "Interactive data visualization",
+        "Automated report generation",
+        "Real-time monitoring systems"
       ]
     }
   ]
@@ -100,11 +100,11 @@ const Features = () => {
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6 font-heading">
             <span className="bg-gradient-to-r from-primary-dark via-primary to-accent bg-clip-text text-transparent">
-              A Smarter Legislative Toolkit
+              Our Service Capabilities
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to turn a bill into a winning strategy. Professional-grade tools designed for the realities of Capitol Hill.
+            We build custom software solutions that transform how government organizations analyze policy, engage stakeholders, and make strategic decisions.
           </p>
         </motion.div>
 
@@ -166,14 +166,14 @@ const Features = () => {
         >
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-foreground mb-4 font-heading">
-              Ready to Build Your Game Plan?
+              Ready to Transform Your Operations?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Join the future of legislating with professional tools designed for staffers.
+              Let&apos;s discuss how our custom software solutions can enhance your organization&apos;s capabilities.
             </p>
             <Button asChild>
-              <Link href="https://app.legismaker.com/login" className="flex items-center">
-                Get Started
+              <Link href="#team" className="flex items-center">
+                Contact Our Team
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

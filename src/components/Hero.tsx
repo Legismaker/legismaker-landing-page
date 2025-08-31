@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { Landmark, Gavel, Scale, FileText, Users, Vote, ArrowRight } from 'lucide-react'
+import { Landmark, Gavel, Scale, FileText, Users, Vote, ArrowRight, Code, Target, Shield } from 'lucide-react'
 import Link from 'next/link'
 import { useRef } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -27,7 +27,7 @@ const Hero = () => {
   ]
 
   return (
-    <div ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div ref={ref} className="relative min-h-screen flex items-center justify-center overflow-visible">
       {/* Background */}
       <motion.div 
         style={{ y, opacity }}
@@ -72,14 +72,14 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="perspective-2000"
         >
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 transform-style-3d font-heading">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 transform-style-3d font-heading overflow-visible">
             <motion.span 
               className="block bg-gradient-to-b from-primary to-primary-dark bg-clip-text text-transparent"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.8 }}
             >
-              <em className="font-kings-caslon">Less</em> dealbreakers,<br/><em className="font-kings-caslon">More</em> compromise.
+              <em className="font-kings-caslon">Government</em> software,<br/><em className="font-kings-caslon">Engineered</em> for impact.
             </motion.span>
           </h1>
         </motion.div>
@@ -90,7 +90,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 2 }}
           className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed"
         >
-          Legismaker helps congressional staffers turn any bill into a legislative game plan. Built for the realities of the Hill—not the hype of Silicon Valley—Legismaker delivers fast, credible insights where it matters most: strategy.
+          We build custom software solutions for government agencies and legislative offices. From policy analysis tools to administrative systems—we deliver technology that works for public service, not profit margins.
         </motion.p>
 
         <motion.div
@@ -100,8 +100,8 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <Button asChild>
-            <Link href="https://app.legismaker.com/login" className="flex items-center gap-2">
-              Upload a Bill
+            <Link href="#features" className="flex items-center gap-2">
+              View Our Services
               <ArrowRight className="transition-transform group-hover:translate-x-1" />
             </Link>
           </Button>
@@ -110,8 +110,8 @@ const Hero = () => {
             variant="outline" 
             asChild
           >
-            <Link href="#features">
-              Learn More
+            <Link href="#team">
+              Meet Our Team
             </Link>
           </Button>
         </motion.div>
@@ -124,27 +124,52 @@ const Hero = () => {
           className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
         >
           {[
-            { title: "Instant", label: "Bill Summary" },
-            { title: "Data-Driven", label: "Predicted Votes" },
-            { title: "Strategic", label: "Compromise Suggestions" }
+            { 
+              title: "End-to-End", 
+              label: "Custom Development",
+              icon: Code,
+              description: "From concept to deployment"
+            },
+            { 
+              title: "Deep", 
+              label: "Government Expertise",
+              icon: Target,
+              description: "Built for public service"
+            },
+            { 
+              title: "24/7", 
+              label: "Mission-Critical Support",
+              icon: Shield,
+              description: "Always-on reliability"
+            }
           ].map((stat, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 3 + index * 0.1 }}
+              whileHover={{ y: -5, scale: 1.02 }}
+              className="group"
             >
-              <Card className="text-center">
-                <CardHeader>
-                  <CardTitle className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <Card className="text-center relative overflow-hidden border-primary/20 hover:border-primary/40 transition-all duration-300 bg-gradient-to-b from-background/80 to-background/40 backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <CardHeader className="relative z-10">
+                  <div className="mb-3 group-hover:scale-110 transition-transform duration-300 p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 w-fit mx-auto">
+                    <stat.icon className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="text-2xl font-bold bg-gradient-to-r from-primary via-primary-dark to-accent bg-clip-text text-transparent group-hover:from-accent group-hover:to-primary transition-all duration-300">
                     {stat.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground font-medium">
+                <CardContent className="relative z-10">
+                  <p className="text-foreground font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
                     {stat.label}
                   </p>
+                  <p className="text-sm text-muted-foreground group-hover:text-muted-foreground/80 transition-colors duration-300">
+                    {stat.description}
+                  </p>
                 </CardContent>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
               </Card>
             </motion.div>
           ))}

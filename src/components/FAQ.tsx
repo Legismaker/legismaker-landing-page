@@ -20,28 +20,28 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What kind of bills can I analyze?",
-      answer: "Legismaker is designed to analyze any U.S. federal bill draft. You can upload bills in common formats (like PDF or TXT), and our system will parse and analyze the text. We are continuously expanding our support for state-level legislation as well."
+      question: "What types of government software do you build?",
+      answer: "We specialize in custom software solutions for government agencies and legislative offices, including policy analysis systems, stakeholder management platforms, predictive analytics tools, and administrative systems. Each solution is tailored to your organization's specific needs and requirements."
     },
     {
-      question: "How accurate are the vote predictions?",
-      answer: "Our vote prediction models are trained on extensive historical data, including past voting records, caucus alignment, and public statements. While no prediction is perfect, our models provide a highly accurate, data-driven forecast to inform your strategy. We also provide confidence scores for our predictions."
+      question: "How do you ensure data security and compliance?",
+      answer: "Security and compliance are fundamental to everything we build. We implement industry-standard encryption, follow government security protocols, and ensure all systems meet relevant compliance requirements. We understand the sensitive nature of government data and build accordingly."
     },
     {
-      question: "Is my data secure?",
-      answer: "Yes. We understand the sensitive nature of legislative data. All uploaded documents and analysis results are encrypted and stored securely. We do not share your data with any third parties. Your privacy and security are our top priorities."
+      question: "What is your development process?",
+      answer: "We follow an agile, collaborative approach that begins with thorough requirements gathering and stakeholder consultation. Throughout development, we maintain regular communication, provide progress updates, and incorporate feedback to ensure the final solution meets your exact needs."
     },
     {
-      question: "Who is Legismaker designed for?",
-      answer: "Legismaker is built for congressional staffers, legislative analysts, policy advisors, and anyone involved in the federal legislative process. Our tools are designed to be intuitive and provide actionable insights for professionals on Capitol Hill."
+      question: "Who do you work with?",
+      answer: "We partner with government agencies, legislative offices, policy organizations, and civic technology initiatives. Our clients range from individual congressional offices to larger government departments seeking custom technology solutions."
     },
     {
-      question: "How are compromise suggestions generated?",
-      answer: "Our AI identifies sections of a bill that are likely to be contentious and suggests amendments based on legislative precedent and data on lawmaker preferences. These suggestions are designed to help you find common ground and build coalitions without compromising the bill's core objectives."
+      question: "Do you provide ongoing support and maintenance?",
+      answer: "Yes, we provide comprehensive post-deployment support including system maintenance, updates, user training, and technical support. We believe in long-term partnerships and ensuring your software continues to serve your mission effectively."
     },
     {
-      question: "Can I use Legismaker for non-partisan analysis?",
-      answer: "Absolutely. Our platform is non-partisan and provides objective analysis based on the data. It is designed to be a valuable tool for any office, regardless of party affiliation."
+      question: "How do you handle project timelines and budgets?",
+      answer: "We work closely with each client to establish realistic timelines and budgets based on project scope and requirements. We provide transparent pricing, regular progress updates, and maintain open communication throughout the development process to ensure projects stay on track."
     },
   ]
 
@@ -68,7 +68,7 @@ const FAQ = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Everything you need to know about our legislative analysis platform.
+            Everything you need to know about our government software development services.
           </p>
         </motion.div>
 
@@ -128,14 +128,14 @@ const FAQ = () => {
         >
           <Card className="p-8">
             <h3 className="text-2xl font-bold text-foreground mb-4 font-heading">
-              Ready to get started?
+              Ready to start your project?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Access the most powerful legislative analysis tool on the Hill.
+              Let&apos;s discuss how we can build the perfect software solution for your organization.
             </p>
             <Button asChild>
-              <Link href="https://app.legismaker.com/login" className="flex items-center">
-                Get Started
+              <Link href="#team" className="flex items-center">
+                Contact Us
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

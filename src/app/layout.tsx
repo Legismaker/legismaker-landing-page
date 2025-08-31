@@ -10,22 +10,22 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
-  title: "Legismaker | Less Dealbreakers, More Compromise",
-  description: "Legismaker helps congressional staffers turn any bill into a legislative game plan. Built for the realities of the Hill—not the hype of Silicon Valley—Legismaker delivers fast, credible insights where it matters most: strategy.",
-  keywords: "legislative analysis, bill analysis, vote prediction, congressional staffers, policymaking, legislative strategy",
+  title: "Legismaker | Government Software, Engineered for Impact",
+  description: "We build custom software solutions for government agencies, legislative offices, and advocacy organizations. From policy analysis tools to administrative systems—we deliver technology that works for public service, not profit margins.",
+  keywords: "government software, custom development, policy analysis, legislative technology, government contractors, advocacy tools, nonprofit technology, civic tech",
   authors: [{ name: "Legismaker" }],
   creator: "Legismaker",
   publisher: "Legismaker",
   openGraph: {
-    title: "Legismaker | Less Dealbreakers, More Compromise",
-    description: "Fast, credible, non-partisan legislative analysis for congressional staffers.",
+    title: "Legismaker | Government Software, Engineered for Impact",
+    description: "Custom software solutions for government agencies, legislative offices, and advocacy organizations.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Legismaker | Less Dealbreakers, More Compromise",
-    description: "Fast, credible, non-partisan legislative analysis for congressional staffers.",
+    title: "Legismaker | Government Software, Engineered for Impact",
+    description: "Custom software solutions for government agencies, legislative offices, and advocacy organizations.",
   },
   icons: {
     icon: "/favicon.ico",

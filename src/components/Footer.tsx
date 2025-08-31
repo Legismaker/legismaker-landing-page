@@ -15,13 +15,18 @@ import { Button } from '@/components/ui/button'
 
 const Footer = () => {
   const footerLinks = {
-    Platform: [
-      { name: 'Features', href: '#features' },
-      { name: 'How it Works', href: '#platform' },
+    Services: [
+      { name: 'Our Capabilities', href: '#features' },
+      { name: 'Development Process', href: '#platform' },
+    ],
+    'Who We Serve': [
+      { name: 'Government Agencies & Contractors', href: '#who-we-serve' },
+      { name: 'Legislative Organizations', href: '#who-we-serve' },
+      { name: 'Advocacy & Nonprofit Organizations', href: '#who-we-serve' },
     ],
     Company: [
-      { name: 'Team', href: '#team' },
-      { name: 'About', href: '#about' }, // Assuming an about section might be added
+      { name: 'Leadership Team', href: '#team' },
+      { name: 'FAQ', href: '#faq' },
     ],
     Legal: [
       { name: 'Privacy Policy', href: '/privacy' },
@@ -63,22 +68,22 @@ const Footer = () => {
               </div>
               
               <h3 className="text-2xl font-bold text-foreground mb-4 font-heading">
-                <em>Less</em> dealbreakers, <em>More</em> compromise.
+                <em>Government</em> software, <em>Engineered</em> for impact.
               </h3>
               <p className="text-muted-foreground mb-8 leading-relaxed max-w-md">
-                Fast, credible, non-partisan legislative analysis designed for the realities of the Hill.
+                Custom software solutions designed for the unique needs of government organizations and public service.
               </p>
               
               <Button asChild>
-                <Link href="https://app.legismaker.com/login" className="flex items-center">
-                  Get Started
+                <Link href="#team" className="flex items-center">
+                  Start Your Project
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </motion.div>
 
             {/* Right Column - Links */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {Object.entries(footerLinks).map(([category, links], categoryIndex) => (
                 <motion.div
                   key={category}
